@@ -10,8 +10,8 @@ function Anagram(word) {
   this.word = word ;
 };
 
-Anagram.prototype.trie = function (mot) {
-    mot.toLowerCase();
+Anagram.prototype.trie = function (carotte) {
+    mot = this.carotte.toLowerCase();
     mot = mot.split("");
     mot = mot.sort();
     mot = mot.join();
@@ -31,7 +31,7 @@ Anagram.prototype.matches = function (words) {
          
     if  (wrods === wrod) {
       // renvoie l'element du tableau comparé  
-        matches[i] = Ewords;
+        matches[i] = Ewords ;
         // matches = matches + matches.push(Ewords) ; 
     }
     }
