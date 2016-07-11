@@ -23,8 +23,7 @@ Anagram.prototype.matches = function (words) {
    if (typeof words === 'string'){
        words = arguments;
     }
-    var ltabwords = words.length ;
-    for (var i = 0 ; i < ltabwords ; i++) {
+    for (var i = 0 ; i < words.length ; i++) {
      var Ewords = words[i];
      var wrods = this.trie(Ewords) ; 
     if  (wrods === wrod && Ewords.toUpperCase() != this.word.toUpperCase()) {
