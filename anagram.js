@@ -11,7 +11,7 @@ function Anagram(word) {
 };
  
 
-// je tableaute le mot, je le trie et je le remets en mot en enlevant les espaces .
+
 
 Anagram.prototype.matches = function (words) {
     var wrod = this.trie(this.word) ;
@@ -36,9 +36,6 @@ Anagram.prototype.matches = function (words) {
     }
     return matches;
 
-//
-// YOUR CODE GOES HERE
-//
 };
 
 Anagram.prototype.trie = function (string1) {
@@ -48,3 +45,4 @@ Anagram.prototype.trie = function (string1) {
     str = str.join("");
     return str;
 };
+// je tableaute le mot, je le trie et je le remets en mot en enlevant les espaces .
